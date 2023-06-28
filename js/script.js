@@ -1,6 +1,7 @@
 const inWork = document.querySelector('.in-work')
 const sumbol = document.querySelector('.symbol')
 const inProcess = document.querySelector('.in-process')
+const pageBody = document.querySelector('.wrapper')
 
 let numInProcess = 0;
 let calculating = false;
@@ -56,3 +57,18 @@ function complete(param) {
 		return final;
 	}
 }
+
+let clickFlashLight = document.querySelectorAll(".calculator__btns");
+for (let i = 0; i < clickFlashLight.length; i++) {
+	clickFlashLight[i].onclick = function () {
+		document.body.classList.toggle('body__duo')
+		flashLight()
+	}
+}
+async function flashLight() {
+	pageBody.classList.add('body__flash-light')
+	setTimeout(() => {
+		pageBody.classList.remove('body__flash-light')
+	}, 100);
+}
+

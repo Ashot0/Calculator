@@ -6,6 +6,19 @@
 
 body {
 	background: rgb(60, 91, 250);
+	background: linear-gradient(90deg, rgba(232, 22, 22, 1) 0%, rgba(237, 17, 195, 1) 50%, rgba(60, 91, 250, 1) 100%);
+
+	// background: linear-gradient(90deg, rgba(60, 91, 250, 1) 0%, rgba(237, 17, 195, 1) 50%, rgba(232, 22, 22, 1) 100%);
+}
+.body__uno {
+	background: rgb(60, 91, 250);
+	background: linear-gradient(90deg, rgba(232, 22, 22, 1) 0%, rgba(237, 17, 195, 1) 50%, rgba(60, 91, 250, 1) 100%);
+}
+.body__flash-light {
+	background: aliceblue;
+}
+.body__duo {
+	background: rgb(60, 91, 250);
 	background: linear-gradient(90deg, rgba(60, 91, 250, 1) 0%, rgba(237, 17, 195, 1) 50%, rgba(232, 22, 22, 1) 100%);
 }
 
@@ -75,6 +88,11 @@ body {
 
 	position: relative;
 	text-align: center;
+}
+.calculator__btn:hover {
+	color: rgba(237, 17, 195, 1);
+}
+.calculator__btn:active {
 }
 .calculator__btn::after,
 .calculator__btn::before {

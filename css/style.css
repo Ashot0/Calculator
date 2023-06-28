@@ -91,6 +91,20 @@ h6 {
 
 body {
   background: rgb(60, 91, 250);
+  background: linear-gradient(90deg, rgb(232, 22, 22) 0%, rgb(237, 17, 195) 50%, rgb(60, 91, 250) 100%);
+}
+
+.body__uno {
+  background: rgb(60, 91, 250);
+  background: linear-gradient(90deg, rgb(232, 22, 22) 0%, rgb(237, 17, 195) 50%, rgb(60, 91, 250) 100%);
+}
+
+.body__flash-light {
+  background: aliceblue;
+}
+
+.body__duo {
+  background: rgb(60, 91, 250);
   background: linear-gradient(90deg, rgb(60, 91, 250) 0%, rgb(237, 17, 195) 50%, rgb(232, 22, 22) 100%);
 }
 
@@ -159,6 +173,10 @@ body {
   overflow: visible;
   position: relative;
   text-align: center;
+}
+
+.calculator__btn:hover {
+  color: rgb(237, 17, 195);
 }
 
 .calculator__btn::after,
