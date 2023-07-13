@@ -57,18 +57,34 @@ function complete(param) {
 		return final;
 	}
 }
+let flashBool;
+let flashBtn = document.querySelector('.button__on-off')
+function flashBoolFunc() {
+	if (flashBool == true) {
+		flashBool = false;
+	} else {
+		flashBool = true;
+	}
+}
+
+
+
 
 let clickFlashLight = document.querySelectorAll(".calculator__btns");
 for (let i = 0; i < clickFlashLight.length; i++) {
 	clickFlashLight[i].onclick = function () {
-		document.body.classList.toggle('body__duo')
-		flashLight()
+		if (flashBool == true) {
+			document.body.classList.toggle('body__duo')
+			flashLight()
+		}
 	}
 }
 async function flashLight() {
+
 	pageBody.classList.add('body__flash-light')
 	setTimeout(() => {
 		pageBody.classList.remove('body__flash-light')
 	}, 100);
+
 }
 
